@@ -1,0 +1,49 @@
+11:59:49 **** Incremental Build of configuration Debug for project BTS7960_Test ****
+make -j8 all 
+arm-none-eabi-size   BTS7960_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10056	    124	   1828	  12008	   2ee8	BTS7960_Test.elf
+Finished building: default.size.stdout
+ 
+11:59:52 **** Incremental Build of configuration Debug for project BTS7960_Test ****
+make -j8 all 
+arm-none-eabi-size   BTS7960_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10056	    124	   1828	  12008	   2ee8	BTS7960_Test.elf
+Finished building: default.size.stdout
+ 
+12:00:15 **** Incremental Build of configuration Debug for project BTS7960_Test ****
+make -j8 all 
+arm-none-eabi-size   BTS7960_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10056	    124	   1828	  12008	   2ee8	BTS7960_Test.elf
+Finished building: default.size.stdout
+ 
+12:00:32 **** Incremental Build of configuration Debug for project BTS7960_Test ****
+make -j8 all 
+arm-none-eabi-size   BTS7960_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10056	    124	   1828	  12008	   2ee8	BTS7960_Test.elf
+Finished building: default.size.stdout
+ 
+12:00:58 **** Incremental Build of configuration Debug for project BTS7960_Test ****
+make -j8 all 
+arm-none-eabi-size   BTS7960_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10056	    124	   1828	  12008	   2ee8	BTS7960_Test.elf
+Finished building: default.size.stdout
+ 
+12:01:35 **** Incremental Build of configuration Debug for project BTS7960_Test ****
+make -j8 all 
+arm-none-eabi-size   BTS7960_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10056	    124	   1828	  12008	   2ee8	BTS7960_Test.elf
+Finished building: default.size.stdout
+ 
+12:17:56 **** Incremental Build of configuration Debug for project BTS7960_Test ****
+make -j8 all 
+arm-none-eabi-size   BTS7960_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10056	    124	   1828	  12008	   2ee8	BTS7960_Test.elf
+Finished building: default.size.stdout
+ 

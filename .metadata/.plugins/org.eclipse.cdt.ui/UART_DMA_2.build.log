@@ -1,0 +1,33 @@
+01:29:35 **** Incremental Build of configuration Debug for project UART_DMA_2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F030x6 -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O1 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'processUART':
+../Core/Src/main.c:230:11: warning: array subscript has type 'char' [-Wchar-subscripts]
+   rxBuffer[rxIndex] = data;
+           ^
+../Core/Src/main.c:233:11: warning: array subscript has type 'char' [-Wchar-subscripts]
+    tempBuf[tempIndex] = data;
+           ^
+../Core/Src/main.c:241:11: warning: array subscript has type 'char' [-Wchar-subscripts]
+   rxBuffer[rxIndex] = '\0';
+           ^
+../Core/Src/main.c:242:10: warning: array subscript has type 'char' [-Wchar-subscripts]
+   tempBuf[tempIndex] = '\0';
+          ^
+arm-none-eabi-gcc -o "UART_DMA_2.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/jerryl/Git/Github_Public/STM32F030F4P6-Core-Board-STM32CubeIDE/UART_DMA_2/STM32F030F4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_DMA_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_DMA_2.elf
+ 
+arm-none-eabi-objdump -h -S  UART_DMA_2.elf  > "UART_DMA_2.list"
+arm-none-eabi-objcopy  -O binary  UART_DMA_2.elf  "UART_DMA_2.bin"
+arm-none-eabi-size   UART_DMA_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13400	    492	   1844	  15736	   3d78	UART_DMA_2.elf
+Finished building: default.size.stdout
+Finished building: UART_DMA_2.bin
+ 
+ 
+Finished building: UART_DMA_2.list
+ 
+
+01:29:35 Build Finished. 0 errors, 4 warnings. (took 331ms)
+
